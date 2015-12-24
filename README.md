@@ -17,13 +17,13 @@ We’ve used the master/worker parallel programming paradigm. In our design there 
 
 #4.	Implementation and Testing:
 a.	Trivial single CPU case: </br>
-	•	No parallelism. </br>
-	•	Read the input from file and calculate the final collapse result </br>
+    • No parallelism. </br>
+    • Read the input from file and calculate the final collapse result </br>
 b.	Master process and workers process: </br>
-	•	Read the input from file  and send block of numbers to worker processes </br>
-	•	Worker process will calculate the sum of those blocks and send them to the master process. </br>
-	•	Master process will collect all the results from workers and check for the input end. </br>
-	•	Then master process will calculate the final collapse result.
+    • Read the input from file  and send block of numbers to worker processes </br>
+    • Worker process will calculate the sum of those blocks and send them to the master process. </br>
+    • Master process will collect all the results from workers and check for the input end. </br>
+    • Then master process will calculate the final collapse result.
 
 #5.	Manual (how to run the program, input and output):
 	•	Put the .exe file and input file (in input.txt format) in same folder.
